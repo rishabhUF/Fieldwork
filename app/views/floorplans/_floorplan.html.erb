@@ -1,9 +1,9 @@
 <div class="comment clearfix">
 	<div class="comment_content">
 		<p class="comment_name"><strong><%= floorplan.name %></strong></p>
-		<p class="comment_body"><%= floorplan.blueprint %></p>
-		<p class="comment_body"><%= floorplan.screenshot %></p>
-
+		<div class="imageplaceholder"> <%= image_tag floorplan.screenshot_url(:thumb).to_s %> </div>
+		<div class="imageplaceholder"> <%= image_tag floorplan.screenshot_url(:large).to_s %> </div>
+		<div class="imageplaceholder"> <%= image_tag floorplan.blueprint_url.to_s %> </div>
 		
 		<p class="comment_time"><%= time_ago_in_words(floorplan.created_at) %> Ago</p>
 	</div>

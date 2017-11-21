@@ -1,0 +1,12 @@
+<%= form_for([@project, @project.floorplans.build], :html => {:multipart => true})  do |f| %>
+	<%= f.label :name %><br>
+	<%= f.text_field :name %><br>
+	<br>
+	<%= f.label :blueprint %><br>
+	<%= f.file_field :blueprint %><br>
+	<br>
+	<%= f.label :screenshot %><br>
+	<%= f.file_field :screenshot %><br>
+	<br>
+	<%= f.submit %>
+<% end %>

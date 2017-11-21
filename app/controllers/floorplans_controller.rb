@@ -1,7 +1,7 @@
 class FloorplansController < ApplicationController
 	def create
 		@project = Project.find(params[:project_id])
-		@floorplan = @project.floorplans.create(params[:floorplan].permit(:name, :blueprint, :screenshot))
+		@floorplan = @project.floorplans.create(params[:floorplan].permit(:name, :image))
 
 		redirect_to project_path(@project)
 	end

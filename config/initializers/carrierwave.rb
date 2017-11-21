@@ -1,8 +1,8 @@
 CarrierWave.configure do |config|
   config.fog_credentials = {
     provider: "AWS",
-    aws_access_key_id: "AKIAJESJGI5M6TC5PPIQ",
-    aws_secret_access_key: "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"
+    aws_access_key_id: "AKIAJWIXJX5ZLA5HSIQA",
+    aws_secret_access_key: "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"
   }
-  config.fog_directory = "fieldwire-ror"
+  config.fog_directory = "fieldwire-ruby"
 end

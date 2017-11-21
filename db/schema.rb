@@ -10,12 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171121161830) do
+ActiveRecord::Schema.define(version: 20171121210915) do
 
   create_table "floorplans", force: :cascade do |t|
     t.string "name"
-    t.string "blueprint"
-    t.string "screenshot"
+    t.string "image"
     t.integer "project_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

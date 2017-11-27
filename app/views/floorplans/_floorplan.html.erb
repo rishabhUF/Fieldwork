@@ -1,9 +1,12 @@
 <div class="comment clearfix">
 	<div class="comment_content">
-		<% if floorplan.name %>
+
+		<% if floorplan.name.empty? == false %>
 			<p class="comment_name"><strong><%= floorplan.name %></strong></p>
+
 		<% else %>
-			<p class="comment_name"><strong><%= floorplan.image_identifier %></strong></p>
+			<p class="comment_name"><strong><%= floorplan.image_identifier%></strong></p>
+
 		<%end %>
 		<div class="imageplaceholder"> <%= image_tag floorplan.image_url(:thumb).to_s %> </div>
 		<div class="imageplaceholder"> <%= image_tag floorplan.image_url(:large).to_s %> </div>

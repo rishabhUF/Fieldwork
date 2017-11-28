@@ -10,7 +10,6 @@
 		<%end %>
 		<div class="imageplaceholder"> <%= image_tag floorplan.image_url(:thumb).to_s %> </div>
 		<div class="imageplaceholder"> <%= image_tag floorplan.image_url(:large).to_s %> </div>
-		
 		<p class="comment_time"><%= time_ago_in_words(floorplan.created_at) %> Ago</p>
 	</div>
 	
